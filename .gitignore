@@ -1,2 +1,6 @@
-.env
+.bash_history
+.bundle/
+.env*
+.local/
+.viminfo
 log/*
