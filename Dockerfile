@@ -21,7 +21,9 @@ USER $UNAME
 
 WORKDIR /$UNAME
 
+#RUN gem install bundler:2.3
+#RUN bundle _2.3_ install
+
 RUN bundle install
 
-CMD ["sleep", "infinity"]
-
+#CMD ["hanami", "server", "--host", "0.0.0.0", "--port", "2300"]

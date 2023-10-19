@@ -1,6 +1,8 @@
 .bash_history
 .bundle/
 .env*
+.gitconfig
+.idea
 .local/
 .viminfo
 log/*

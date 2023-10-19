@@ -16,6 +16,9 @@ gem "rom", "~> 5.3"
 gem "rom-sql", "~> 3.6"
 gem "pg"
 
+# gem 'debase'
+# gem 'ruby-debug-ide', '0.6'
+
 group :test do
   gem "database_cleaner-sequel"
 end

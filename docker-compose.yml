@@ -1,15 +1,23 @@
 ---
 services:
-  devenv:
+  dev:
     image: devenv
     build:
       dockerfile: Dockerfile
       context: .
     ports:
-      - "2300:2300"
+      - "2300:2300" # Hanami
+#      - "1234:1234" # RubyMine
+#      - "26162:26162" # RubyMine
     volumes:
       - .:/devenv
+    command:
+      - /bin/bash
+      - -c
+      - sleep infinity
   db:
+    profiles:
+      - postgres
     image: postgres:12-alpine
     environment:
       - POSTGRES_PASSWORD=postgres
